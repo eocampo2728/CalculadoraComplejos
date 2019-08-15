@@ -15,14 +15,16 @@ public class NumeroComplejo {
     public double pReal;
     public double pImaginaria;
     
-    NumeroComplejo(double real, double imaginario){
+    public NumeroComplejo(double real, double imaginario){
         pReal = real;
         pImaginaria = imaginario;
     }
     
-    @Override
-    public String toString(){
-        return ("("+Double.toString(pReal)+","+Double.toString(pImaginaria)+")");
+    public boolean equals(NumeroComplejo n1){
+        if (n1.getParteReal() == this.getParteReal() && n1.getParteImaginaria() == this.getParteImaginaria()){
+            return true;
+        }
+        return false;
     }
     
     public double getParteReal(){
