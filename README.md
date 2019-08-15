@@ -3,6 +3,7 @@ Este programa es una calculadora de numeros complejos, está compuesta de 2 clas
 
 ## Calculadora
 Esta clase es la clase principal y contiene los siguientes metodos, y es la clase que hace todos las operaciones entre numeros complejos.
+
 	*suma(NumeroComplejo n1, NumeroComplejo n2)
 	*producto(NumeroComplejo n1, NumeroComplejo n2)
 	*resta(NumeroComplejo n1, NumeroComplejo n2)
