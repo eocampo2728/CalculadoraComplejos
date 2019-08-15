@@ -16,5 +16,14 @@ Esta clase es la clase principal y contiene los siguientes metodos, y es la clas
 ## NumeroComplejo
 Esta clase representa los numeros complejos teniendo como atributos, la parte real e imaginaria de cada numero complejo.
 
+## Getting Started
+Para correr este programa, solo necesita clonar el repositorio y abrirlo en NetBeans.
+
 ## Autor
 Eduardo Ocampo
+
+## Build With
+Este Programa fue creado en Java y utilizando la herramienta NetBeans
+
+## License 
+Free license
