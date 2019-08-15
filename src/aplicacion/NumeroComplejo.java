@@ -20,6 +20,11 @@ public class NumeroComplejo {
         pImaginaria = imaginario;
     }
     
+    /**
+     * este metodo es para saber si dos numeros complejos son iguales.
+     * @param n1 Numero complejo con el que se quiere comparar.
+     * @return Booleano que dice si son iguales o no.
+     */
     public boolean equals(NumeroComplejo n1){
         if (n1.getParteReal() == this.getParteReal() && n1.getParteImaginaria() == this.getParteImaginaria()){
             return true;
