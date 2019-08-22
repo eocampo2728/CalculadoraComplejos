@@ -61,7 +61,7 @@ public class Calculadora {
         pReal = n1.getParteReal() - n2.getParteReal();
         pImaginaria = n1.getParteImaginaria() - n2.getParteImaginaria();
         
-        return new NumeroComplejo(pReal,pImaginaria);
+        return new NumeroComplejo(pReal,pImaginaria); 
     }
     
     /**
