@@ -26,4 +26,6 @@ Eduardo Ocampo
 Este Programa fue creado en Java y utilizando la herramienta [NetBeans](https://netbeans.org/).
 
 ## License 
-Free license
+Copyright (C) 2007 Free Software Foundation, Inc. [<https://fsf.org/>](https://fsf.org/)
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
