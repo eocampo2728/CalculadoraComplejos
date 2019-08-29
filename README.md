@@ -1,7 +1,9 @@
-﻿# CalculadoraComplejos
+# CalculadoraComplejos
+
+## Description
 Este programa es una calculadora de numeros complejos, está compuesta de 2 clases principales y 1 clase de pruebas.
 
-## Calculadora
+### Calculadora
 Esta clase es la clase principal y contiene los siguientes metodos, y es la clase que hace todos las operaciones entre numeros complejos.
 
 	1. suma(NumeroComplejo n1, NumeroComplejo n2)
@@ -13,11 +15,20 @@ Esta clase es la clase principal y contiene los siguientes metodos, y es la clas
 	7. polar(NumeroComplejo n1)
 	8. fase(NumeroComplejo n1)
 	
-## NumeroComplejo
+### NumeroComplejo
 Esta clase representa los numeros complejos teniendo como atributos, la parte real e imaginaria de cada numero complejo.
 
 ## Getting Started
 Para correr este programa, solo necesita clonar el repositorio y abrirlo en [NetBeans](https://netbeans.org/).
+
+## Install
+Este programa no es necesario instalarlo
+
+## Test
+Para probar este programa se necesita compilar el programa en netbeans y correr la clase de pruebas.
+
+## Use
+Para usar este programa se necesita compilar el programa en netbeans y correr la el programa tomando como main la clase calculadora.
 
 ## Autor
 Eduardo Ocampo
