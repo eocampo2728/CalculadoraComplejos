@@ -138,6 +138,10 @@ public class Calculadora {
         return fase;
     }
     
+    public static NumeroComplejo numeroComplejoInverso(NumeroComplejo n1){
+        return new NumeroComplejo(-n1.getParteReal(), -n1.getParteImaginaria());
+    }
+    
     public static void main(String[] args) {
         
         
