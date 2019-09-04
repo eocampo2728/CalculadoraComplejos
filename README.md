@@ -1,4 +1,4 @@
-# CalculadoraComplejos
+﻿# CalculadoraComplejos
 
 ## Description
 Este programa es una calculadora de numeros complejos, está compuesta de 2 clases principales y 1 clase de pruebas.
@@ -36,5 +36,3 @@ Eduardo Ocampo
 ## Build With
 Este Programa fue creado en Java y utilizando la herramienta [NetBeans](https://netbeans.org/).
 
-## License 
-Free license
