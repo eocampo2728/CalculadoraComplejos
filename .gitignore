@@ -40,9 +40,7 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 
 ### NetBeans ###
-**/nbproject/private/
-**/nbproject/Makefile-*.mk
-**/nbproject/Package-*.bash
+/nbproject/
 build/
 nbbuild/
 dist/
