@@ -88,5 +88,14 @@ public class CalculadoraTest {
         
         assertTrue(n1.fase()== res);
     }
+    
+    @Test
+    public void adicionVector(){
+        NumeroComplejo n1 = new NumeroComplejo(3,5);
+        double res = 1.03;
+        
+        assertTrue(n1.fase()== res);
+    }
+    
 
 }
