@@ -15,6 +15,7 @@ Esta calculadora contiene los siguientes metodos para operacion de numeros compl
 	8. fase()
 
 Esta calculadora contiene los siguentes metodos para operaciones de matrices y vectores complejos.
+
 	1. Adición de vectores complejos.
 	2. Inversa de vectores complejos.
 	3. Multiplicación escalar de vectores complejos.
