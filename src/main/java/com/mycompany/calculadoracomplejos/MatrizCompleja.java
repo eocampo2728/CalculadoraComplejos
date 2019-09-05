@@ -7,7 +7,7 @@ package com.mycompany.calculadoracomplejos;
 
 /**
  *
- * @author 2120046
+ * @author Eduardo Ocampo
  */
 public class MatrizCompleja {
     
@@ -22,7 +22,7 @@ public class MatrizCompleja {
     }
     
     /**
-     * Agregar un numero complejo
+     * Agregar un numero complejo a una matriz
      * @param i Posicion i en la matriz
      * @param j Posicion j en la matriz
      * @param numero Numero a agregar
@@ -32,9 +32,9 @@ public class MatrizCompleja {
     }
     
     /**
-     * 
-     * @param m1
-     * @return 
+     * Este metodo suma dos matrices complejsa
+     * @param m1 Matriz que se decea sumar
+     * @return Matriz resultado de la suma
      */
     public MatrizCompleja suma(MatrizCompleja m1){
         NumeroComplejo[][] resultado = new NumeroComplejo[matriz.length][matriz[0].length];
@@ -47,9 +47,9 @@ public class MatrizCompleja {
     }
     
     /**
-     * 
-     * @param m1
-     * @return 
+     * Este metodo resta dos matrices complejas
+     * @param m1 Matriz que se decea restar
+     * @return Matriz resultado de la resta
      */
     public MatrizCompleja resta(MatrizCompleja m1){
         NumeroComplejo[][] resultado = new NumeroComplejo[matriz.length][matriz[0].length];
@@ -62,9 +62,9 @@ public class MatrizCompleja {
     }
     
     /**
-     * 
-     * @param n1
-     * @return 
+     * Este metodo hace el producto escalar con un vector o una matriz
+     * @param n1 Numero complejo que se quiere multiplicar por la matriz
+     * @return Matriz resutado del producto escalar con la matriz.
      */
     public MatrizCompleja productoEscalar(NumeroComplejo n1){
         NumeroComplejo[][] resultado = new NumeroComplejo[matriz.length][matriz[0].length];
@@ -77,8 +77,8 @@ public class MatrizCompleja {
     }
     
     /**
-     * 
-     * @return 
+     * Este metodo hace la matriz traspuesta
+     * @return La matriz transpuesta
      */
     public MatrizCompleja transpuesta(){
         NumeroComplejo[][] resultado = new NumeroComplejo[matriz[0].length][matriz.length];
@@ -91,8 +91,8 @@ public class MatrizCompleja {
     }
     
     /**
-     * 
-     * @return 
+     * Este metodo hace la matriz conjugada
+     * @return La matriz conjugada
      */
     public MatrizCompleja conjugada(){
         NumeroComplejo[][] resultado = new NumeroComplejo[matriz.length][matriz[0].length];
@@ -105,16 +105,16 @@ public class MatrizCompleja {
     }
     
     /**
-     * 
-     * @return 
+     * Este metodo hace la matriz adjunta
+     * @return la matriz adjunta
      */
     public MatrizCompleja adjunta(){
         return this.transpuesta().conjugada();
     }
     
     /**
-     * 
-     * @return 
+     * Este metodo calcula la norma
+     * @return La norma de una matriz
      */
     public Double norma(){
         Double temp = 0.0;
@@ -128,17 +128,17 @@ public class MatrizCompleja {
     }
     
     /**
-     * 
-     * @param m1
-     * @return 
+     * Este metodo calcula la distancia entre dos matrices
+     * @param m1 Matriz con la que se decea comparar
+     * @return Distancia entre las dos matrices
      */
     public Double distancia(MatrizCompleja m1){
         return this.resta(m1).norma();
     }
     
     /**
-     * 
-     * @return 
+     * Este metodo dice si una materia es hermitian o no
+     * @return Si la matriz es hermitian o no
      */
     public boolean Hermitian(){
         if(this.equals(this.adjunta())){
