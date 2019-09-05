@@ -105,7 +105,6 @@ public class NumeroComplejo {
     
     /**
      * Este metodo calcula el conjugado de un numero complejo.
-     * @param n1 Numero complejo al que se le quiere saber el conjugado.
      * @return El numero complejo conjugado
      */
     public NumeroComplejo conjugado(){
@@ -113,8 +112,15 @@ public class NumeroComplejo {
     }
     
     /**
+     * Este metodo calcula el Inverso de un numero complejo.
+     * @return El numero complejo conjugado
+     */
+    public NumeroComplejo inverso(){
+        return new NumeroComplejo(-this.pReal,-this.pImaginaria);
+    }
+    
+    /**
      * Este metodo calcula las coordenadas polares de un numero complejo.
-     * @param n1 Numero complejo al que se le quiere saber su equivalencia en coordenadas polares.
      * @return La coordenada polar como string
      */
     public String polar(){
@@ -127,7 +133,13 @@ public class NumeroComplejo {
         return (Double.toString(modulo)+","+Double.toString(fase));
     }
     
-    
+    /**
+     * Este metodo calcula la norma de un numero complejo.
+     * @return Double que representa la norma
+     */
+    public Double norma(){
+        return Math.sqrt((pReal*pReal)+(pImaginaria*pImaginaria));
+    }
     
     /**
      * este metodo es para saber si dos numeros complejos son iguales.
