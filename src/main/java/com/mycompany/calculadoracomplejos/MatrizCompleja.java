@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.calculadoracomplejos1;
+package com.mycompany.calculadoracomplejos;
 
-import java.util.ArrayList;
 /**
  *
  * @author 2120046
  */
 public class MatrizCompleja {
+    
     private NumeroComplejo[][] matrix;
 
     public MatrizCompleja(int i, int j){
@@ -23,9 +23,9 @@ public class MatrizCompleja {
     
     /**
      * Agregar un numero complejo
-     * @param i
-     * @param j
-     * @param c
+     * @param i Posicion i en la matriz
+     * @param j Posicion j en la matriz
+     * @param numero Numero a agregar
      */
     public void add(int i, int j, NumeroComplejo numero){
         matrix[i][j] = numero;

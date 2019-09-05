@@ -5,13 +5,13 @@
  */
 
 
+import com.mycompany.calculadoracomplejos.*;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import com.mycompany.calculadoracomplejos1.*;
 
 /**
  *
@@ -25,7 +25,7 @@ public class CalculadoraTest {
         NumeroComplejo n2 = new NumeroComplejo(6,8);
         NumeroComplejo res = new NumeroComplejo(11,10);
         
-        assertTrue(Calculadora.suma(n1, n2).equals(res));
+        assertTrue(n1.suma(n2).equals(res));
     } 
     
     @Test
@@ -34,7 +34,7 @@ public class CalculadoraTest {
         NumeroComplejo n2 = new NumeroComplejo(0,1);
         NumeroComplejo res = new NumeroComplejo(-1,0);
         
-        assertTrue(Calculadora.producto(n1, n2).equals(res));
+        assertTrue(n1.producto(n2).equals(res));
     }
     
     @Test
@@ -43,7 +43,7 @@ public class CalculadoraTest {
         NumeroComplejo n2 = new NumeroComplejo(2,5);
         NumeroComplejo res = new NumeroComplejo(3,5);
         
-        assertTrue(Calculadora.resta(n1, n2).equals(res));
+        assertTrue(n1.resta(n2).equals(res));
     }
     
     @Test
@@ -52,7 +52,7 @@ public class CalculadoraTest {
         NumeroComplejo n2 = new NumeroComplejo(1,-1);
         NumeroComplejo res = new NumeroComplejo(-1,4);
         
-        assertTrue(Calculadora.division(n1, n2).equals(res));
+        assertTrue(n1.division(n2).equals(res));
     }
     
     @Test
@@ -60,7 +60,7 @@ public class CalculadoraTest {
         NumeroComplejo n1 = new NumeroComplejo(3,5);
         double res = 5.83;
         
-        assertTrue(Calculadora.modulo(n1)== res);
+        assertTrue(n1.modulo()== res);
     }
     
     @Test
@@ -68,7 +68,7 @@ public class CalculadoraTest {
         NumeroComplejo n1 = new NumeroComplejo(3,5);
         NumeroComplejo res = new NumeroComplejo(3,-5);
         
-        assertTrue(Calculadora.conjugado(n1).equals(res));
+        assertTrue(n1.conjugado().equals(res));
     }
     
     @Test
@@ -76,7 +76,7 @@ public class CalculadoraTest {
         NumeroComplejo n1 = new NumeroComplejo(3,5);
         String res = "5.83,1.03";
         
-        assertTrue(Calculadora.polar(n1).equals(res));
+        assertTrue(n1.polar().equals(res));
     }
     
     @Test
@@ -84,7 +84,7 @@ public class CalculadoraTest {
         NumeroComplejo n1 = new NumeroComplejo(3,5);
         double res = 1.03;
         
-        assertTrue(Calculadora.fase(n1)== res);
+        assertTrue(n1.fase()== res);
     }
 
 }
