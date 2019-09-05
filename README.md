@@ -1,34 +1,48 @@
-﻿# CalculadoraComplejos
+# CalculadoraComplejos
 
 ## Description
 Este programa es una calculadora de numeros complejos, está compuesta de 2 clases principales y 1 clase de pruebas.
 
-### Calculadora
-Esta clase es la clase principal y contiene los siguientes metodos, y es la clase que hace todos las operaciones entre numeros complejos.
+Esta calculadora contiene los siguientes metodos para operacion de numeros complejos.
 
-	1. suma(NumeroComplejo n1, NumeroComplejo n2)
-	2. producto(NumeroComplejo n1, NumeroComplejo n2)
-	3. resta(NumeroComplejo n1, NumeroComplejo n2)
-	4. division(NumeroComplejo n1, NumeroComplejo n2)
-	5. modulo(NumeroComplejo n1)
-	6. conjugado(NumeroComplejo n1)
-	7. polar(NumeroComplejo n1)
-	8. fase(NumeroComplejo n1)
+	1. suma(NumeroComplejo n1)
+	2. producto(NumeroComplejo n1)
+	3. resta(NumeroComplejo n1)
+	4. division(NumeroComplejo n1)
+	5. modulo()
+	6. conjugado()
+	7. polar()
+	8. fase()
+
+Esta calculadora contiene los siguentes metodos para operaciones de matrices y vectores complejos.
+	1. Adición de vectores complejos.
+	2. Inversa de vectores complejos.
+	3. Multiplicación escalar de vectores complejos.
+	4. Adición de matrices complejos.
+	5. Inversa de matrices complejos.
+	6. Multiplicación escalar de matrices complejas.
+	7. Matriz transpuesta
+	8. Matriz conjugada
+	9. Matriz adjunta
+	10. Función para calcular la "acción" de una matriz sobre un vector.
+	11. Norma de matrices
+	12. Distancia entrematrices
+	13. Revisar si es unitaria
+	14. Revisar si es Hermitian
+	15. Producto tensor
 	
-### NumeroComplejo
-Esta clase representa los numeros complejos teniendo como atributos, la parte real e imaginaria de cada numero complejo.
 
 ## Getting Started
-Para correr este programa, solo necesita clonar el repositorio y abrirlo en [NetBeans](https://netbeans.org/).
+Para correr este programa, solo necesita clonar el repositorio y abrirlo en [NetBeans](https://netbeans.org/), o en cualquier compilador que soporte proyectos maven.
 
 ## Install
-Este programa no es necesario instalarlo
+Para instalar este programa se necesita clonar el repositorio de github, y abrir el proyecto maven en cualquier compilador
 
 ## Test
-Para probar este programa se necesita compilar el programa en netbeans y correr la clase de pruebas.
+Para probar este programa se necesita compilar el programa en cualquier compilador y correr la clase de CalculadoraTest, que es donde se encuentran todas las pruebas.
 
 ## Use
-Para usar este programa se necesita compilar el programa en netbeans y correr la el programa tomando como main la clase calculadora.
+Para usar este programa se necesita compilar el programa en cualquier compilador y correr la el programa junto con sus pruebas.
 
 ## Autor
 Eduardo Ocampo
