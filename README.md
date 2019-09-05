@@ -5,14 +5,14 @@ Este programa es una calculadora de numeros complejos, está compuesta de 2 clas
 
 Esta calculadora contiene los siguientes metodos para operacion de numeros complejos.
 
-	1. suma(NumeroComplejo n1)
-	2. producto(NumeroComplejo n1)
-	3. resta(NumeroComplejo n1)
-	4. division(NumeroComplejo n1)
-	5. modulo()
-	6. conjugado()
-	7. polar()
-	8. fase()
+	1. Suma de complejos
+	2. Producto de complejos
+	3. Resta
+	4. División
+	5. Módulo
+	6. Conjugado
+	7. Conversión entre representaciones polar y cartesiano
+	8. Retornar la fase de un número complejo.
 
 Esta calculadora contiene los siguentes metodos para operaciones de matrices y vectores complejos.
 
