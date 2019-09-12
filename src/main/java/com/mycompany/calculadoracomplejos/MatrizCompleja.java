@@ -62,6 +62,25 @@ public class MatrizCompleja {
     }
     
     /**
+     * Multiplicar con otra matriz
+     * @param complexMatrix la otra matriz
+     * @return matriz resultado de la operacion
+     */
+    public MatrizCompleja producto(MatrizCompleja complexMatrix){
+        NumeroComplejo[][] resultado = new NumeroComplejo[matriz.length][complexMatrix.getMatriz()[0].length];
+        for(int i = 0; i< matriz.length; i++){
+            for(int k = 0; k< complexMatrix.getMatriz()[0].length; k++){
+                NumeroComplejo temp = new NumeroComplejo(0,0);
+                for(int j = 0; j< matriz[0].length; j++){
+                    temp = temp.suma(matriz[i][j].producto(complexMatrix.getMatriz()[j][k]));
+                }
+                resultado[i][k] = temp;
+            }
+        }
+        return new MatrizCompleja(resultado);
+    }
+    
+    /**
      * Este metodo hace el producto escalar con un vector o una matriz
      * @param n1 Numero complejo que se quiere multiplicar por la matriz
      * @return Matriz resutado del producto escalar con la matriz.
@@ -113,6 +132,27 @@ public class MatrizCompleja {
     }
     
     /**
+     * The tensor product of the matrz with another matrix
+     * @param complexMatrix the other matrix
+     * @return a new matrix
+     */
+    public MatrizCompleja tensor(MatrizCompleja complexMatrix){
+        NumeroComplejo[][] resultado = new NumeroComplejo[matriz.length* complexMatrix.getMatriz().length]
+                [matriz[0].length* complexMatrix.getMatriz()[0].length];
+        for(int i = 0; i< matriz.length; i++){
+            for(int j = 0; j< matriz[0].length; j++){
+                for(int m = 0; m< complexMatrix.getMatriz().length; m++){
+                    for(int n = 0; n< complexMatrix.getMatriz()[0].length; n++){
+                        resultado[i* complexMatrix.getMatriz().length+m][j* complexMatrix.getMatriz()[0].length+n] =
+                                matriz[i][j].producto(complexMatrix.getMatriz()[m][n]);
+                    }
+                }
+            }
+        }
+        return new MatrizCompleja(resultado);
+    }
+    
+    /**
      * Este metodo calcula la norma
      * @return La norma de una matriz
      */
@@ -146,6 +186,35 @@ public class MatrizCompleja {
         }else{
             return false;
         }
+    }
+    
+    /**
+     * Says if the matris is unitary
+     * @return
+     */
+    public boolean isUnitary(){
+        NumeroComplejo[][] tempMatrix = new NumeroComplejo[matriz.length][matriz.length];
+        for(int i = 0; i < matriz.length; i++){
+            for(int j = 0; j < matriz.length; j++){
+                if(i==j){
+                    tempMatrix[i][j] = new NumeroComplejo(1,0);
+                }else{
+                    tempMatrix[i][j] = new NumeroComplejo(0,0);
+                }
+            }
+        }
+        MatrizCompleja iden = new MatrizCompleja(tempMatrix);
+        MatrizCompleja first = this.producto(this.adjunta());
+        MatrizCompleja second = this.adjunta().producto(this);
+        boolean bol = true;
+
+        for (int i = 0; i<matriz.length;i++){
+            for(int j = 0; j<matriz.length;j++){
+                if(!first.getMatriz()[i][j].equals(iden.getMatriz()[i][j]) ||
+                !second.getMatriz()[i][j].equals(iden.getMatriz()[i][j])) bol = false;
+            }
+        }
+        return bol;
     }
     
     public boolean equals(MatrizCompleja m1){
