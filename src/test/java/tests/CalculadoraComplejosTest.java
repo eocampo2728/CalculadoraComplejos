@@ -7,7 +7,7 @@ package tests;
  */
 
 
-import com.mycompany.calculadoracomplejos.*;
+import calculadoracomplejos.*;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
