@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
  *
  * @author Eduardo Ocampo
  */
-public class CalculadoraTest {
+public class NumeroComplejoTest {
     
     @Test
     public void suma(){
