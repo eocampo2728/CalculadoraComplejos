@@ -56,6 +56,7 @@ mvn test
 Para usar esta libreria lo unico que se necesita hacer es importa la libreria, en el programa en el que se decea utilizarlo.
 Esta libreria cuenta con 8 operaciones de numeros complejos y 15 operaciones de matrices o vectores complejos.
 Las operaciones de numeros complejos son:
+
 ```java
 public NumeroComplejo suma(NumeroComplejo n1)
 public NumeroComplejo producto(NumeroComplejo n1)
@@ -68,6 +69,9 @@ public NumeroComplejo inverso()
 public String polar()
 public Double norma()
 ```
+
+Las operaciones de matrices y vectores complejos son:
+
 ```java
 public MatrizCompleja suma(MatrizCompleja m1)
 public MatrizCompleja resta(MatrizCompleja m1)
