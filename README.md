@@ -44,6 +44,7 @@ Ya con el repositorio clonado en su dispositivo, se puede compilar mediante cual
 ## Test
 Para probar este programa se necesita compilarlo en cualquier compilador, esta libreria tiene una clase de pruebas llamada CalculadoraComplejosTest.
 ![test](https://github.com/eocampo2728/CalculadoraComplejos/blob/master/cap02.PNG?raw=true)
+
 En esta clase se encuentran todas las pruebas de la libreria. Para correr las pruebas solo se necesita ejecutar los comandos:
 ```
 mvn compile
