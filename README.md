@@ -37,13 +37,23 @@ Esta calculadora contiene los siguentes metodos para operaciones de matrices y v
 Para correr este programa, solo necesita clonar el repositorio y abrirlo en [NetBeans](https://netbeans.org/), o en cualquier compilador que soporte proyectos maven.
 
 ## Install
-Para instalar este programa se necesita clonar el repositorio de github, y abrir el proyecto maven en cualquier compilador
+Para hacer la instalacion de esta libreria, se debe clonar el repositorio:
+![ins](https://github.com/eocampo2728/CalculadoraComplejos/blob/master/cap01.PNG?raw=true)
+Ya con el repositorio clonado en su dispositivo, se puede compilar mediante cualquier compilador.
 
 ## Test
-Para probar este programa se necesita compilar el programa en cualquier compilador y correr la clase de CalculadoraTest, que es donde se encuentran todas las pruebas.
+Para probar este programa se necesita compilarlo en cualquier compilador, esta libreria tiene una clase de pruebas llamada CalculadoraComplejosTest.
+![test](https://github.com/eocampo2728/CalculadoraComplejos/blob/master/cap02.PNG?raw=true)
+En esta clase se encuentran todas las pruebas de la libreria. Para correr las pruebas solo se necesita ejecutar los comandos:
+```
+mvn compile
+mvn test
+```
 
 ## Use
-Para usar este programa se necesita compilar el programa en cualquier compilador y correr la el programa junto con sus pruebas.
+Para usar esta libreria lo unico que se necesita hacer es importa la libreria, en el programa en el que se decea utilizarlo.
+Esta libreria cuenta con 8 operaciones de numeros complejos y 15 operaciones de matrices o vectores complejos.
+
 
 ## Autor
 Eduardo Ocampo
