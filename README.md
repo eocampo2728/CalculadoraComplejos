@@ -55,7 +55,33 @@ mvn test
 ## Use
 Para usar esta libreria lo unico que se necesita hacer es importa la libreria, en el programa en el que se decea utilizarlo.
 Esta libreria cuenta con 8 operaciones de numeros complejos y 15 operaciones de matrices o vectores complejos.
-
+Las operaciones de numeros complejos son:
+```java
+public NumeroComplejo suma(NumeroComplejo n1)
+public NumeroComplejo producto(NumeroComplejo n1)
+public NumeroComplejo resta(NumeroComplejo n1)
+public NumeroComplejo division(NumeroComplejo n1)
+public double modulo()
+public double fase()
+public NumeroComplejo conjugado()
+public NumeroComplejo inverso()
+public String polar()
+public Double norma()
+```
+```java
+public MatrizCompleja suma(MatrizCompleja m1)
+public MatrizCompleja resta(MatrizCompleja m1)
+public MatrizCompleja producto(MatrizCompleja complexMatrix)
+public MatrizCompleja productoEscalar(NumeroComplejo n1)
+public MatrizCompleja transpuesta()
+public MatrizCompleja conjugada()
+public MatrizCompleja adjunta()
+public MatrizCompleja tensor(MatrizCompleja complexMatrix)
+public Double norma()
+public Double distancia(MatrizCompleja m1)
+public boolean Hermitian()
+public boolean isUnitary()
+```
 
 ## Autor
 Eduardo Ocampo
