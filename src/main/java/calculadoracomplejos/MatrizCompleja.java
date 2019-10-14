@@ -95,6 +95,16 @@ public class MatrizCompleja {
         return new MatrizCompleja(resultado);
     }
     
+    public NumeroComplejo productoInterno(MatrizCompleja complexMatrix) {
+        NumeroComplejo temp = new NumeroComplejo(0,0);
+        for(int i = 0; i< matriz.length; i++){
+            for(int j = 0; j< matriz[0].length; j++){
+                temp = temp.suma(matriz[i][j].producto(complexMatrix.getMatriz()[i][j]));
+            }
+        }
+        return temp;
+    }
+    
     /**
      * Este metodo hace la matriz traspuesta
      * @return La matriz transpuesta
@@ -227,6 +237,14 @@ public class MatrizCompleja {
             }
         }
         return bandera;
+    }
+    
+    public double probabilidad(int n) {
+        return Math.pow(matriz[0][n].norma()/this.norma(),2);
+    }
+    
+    public MatrizCompleja bra(){
+        return this.adjunta();
     }
     
     public NumeroComplejo[][] getMatriz(){

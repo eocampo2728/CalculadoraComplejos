@@ -153,6 +153,10 @@ public class NumeroComplejo {
         return false;
     }
     
+    public NumeroComplejo productoEscalar(double num){
+        return new NumeroComplejo(pReal*num, pImaginaria*num);
+    }
+    
     public double getParteReal(){
         return pReal;
     }
